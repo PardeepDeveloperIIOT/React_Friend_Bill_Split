@@ -1,13 +1,190 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+.start {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: start;
+}
+.heading {
+  text-align: center;
+  background-color: rgb(243, 179, 95);
+  padding: 10px 0px;
+}
+.Friend_Container {
+  margin: 10px 10px;
+  width: 60%;
+  padding: 0px;
+  border: 2px solid rgb(211, 209, 209);
+  height: 450px;
+  overflow-x: hidden;
+  border-radius: 20px;
+}
+.Friend_List {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 20px 10px;
+  border-bottom: 2px solid rgb(235, 233, 233);
+}
+.Friend_List:hover {
+  background-color: bisque;
+}
+.Friend-active {
+  background-color: bisque;
+}
+.friend-message-add {
+  color: rgb(25, 245, 13);
+}
+.friend-message-sub {
+  color: rgb(240, 1, 1);
+}
+.Friend_List img {
+  border-radius: 50%;
+}
+.friend_name_message p {
+  margin-top: 5px;
+}
+.allbtn {
+  background-color: rgb(243, 179, 95);
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.addFriend-main {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+}
+
+.addfriend-container form {
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 440px;
+}
+.addfriend-container input {
+  padding: 8px;
+  border: none;
+  margin: 10px 0px 10px 50px;
+  border-radius: 6px;
+  width: 200px;
+}
+.addfriend-btn {
+  text-align: right;
+}
+
+.SplitBill_container {
+  background-color: bisque;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 40%;
+}
+.splitbill-section form {
+  padding: 40px 10px 20px 20px;
+  text-align: left;
+}
+.splitbill-section input {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  margin-top: 5px;
+  width: 100%;
+}
+.splitbill-section label {
+  text-align: right;
+}
+.splitbill-section select {
+  padding: 8px;
+  margin: 10px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+}
+.addfriendbtnlast {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+}
+@media (max-width: 700px) {
+  .start {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Friend_Container {
+    width: 70%;
+  }
+  .SplitBill_container {
+    width: 70%;
+  }
+  .addFriend-main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .addfriend-container form {
+    width: 480px;
+  }
+}
+@media (max-width: 512px) {
+  .Friend_Container {
+    width: 90%;
+  }
+  .SplitBill_container {
+    width: 90%;
+  }
+  .addfriend-container form {
+    width: 450px;
+  }
+}
+@media (max-width: 467px) {
+  .addfriend-container form {
+    width: 380px;
+  }
+}
+@media (max-width: 413px) {
+  .addfriend-container form {
+    width: 380px;
+  }
+  .Friend_Container {
+    width: 90%;
+  }
+  .SplitBill_container {
+    width: 90%;
+  }
+}
+@media (max-width: 376px) {
+  * {
+    font-size: 12px;
+  }
+  .addfriend-container form {
+    width: 310px;
+  }
+  .Friend_Container {
+    width: 100%;
+  }
+  .SplitBill_container {
+    width: 100%;
+  }
+  .allbtn {
+    width: 50px;
+  }
 }
