@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_Friend_Bill_Split/static/css/main.e0329bf3.css",
+    "main.js": "/React_Friend_Bill_Split/static/js/main.bbd51bbd.js",
+    "index.html": "/React_Friend_Bill_Split/index.html",
+    "main.e0329bf3.css.map": "/React_Friend_Bill_Split/static/css/main.e0329bf3.css.map",
+    "main.bbd51bbd.js.map": "/React_Friend_Bill_Split/static/js/main.bbd51bbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0329bf3.css",
+    "static/js/main.bbd51bbd.js"
+  ]
+}
